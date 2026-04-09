@@ -12,7 +12,7 @@ COPY tsconfig.json ./
 
 COPY scripts/package.json ./scripts/
 
-RUN pnpm install --filter @workspace/scripts --frozen-lockfile
+RUN pnpm install --filter @workspace/scripts --no-frozen-lockfile
 
 COPY scripts/ ./scripts/
 
